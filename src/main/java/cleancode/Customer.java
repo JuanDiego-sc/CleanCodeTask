@@ -1,3 +1,5 @@
+package cleancode;
+
 import utils.StringUtils;
 
 public class Customer {
@@ -13,7 +15,7 @@ public class Customer {
 
     public void setName(String name) {
         if (StringUtils.isNullOrEmpty(name)) {
-            throw new IllegalArgumentException("Customer name cannot be empty.");
+            throw new IllegalArgumentException("cleancode.Customer name cannot be empty.");
         }
         this.name = name;
     }

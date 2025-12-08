@@ -1,5 +1,5 @@
-Customer.class
-utils/StringUtils.class
-Order.class
-Application.class
-CustomerManager.class
+cleancode\Application.class
+cleancode\CustomerManager.class
+cleancode\Customer.class
+utils\StringUtils.class
+cleancode\Order.class
