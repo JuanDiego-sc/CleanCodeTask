@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Customer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cleancode</a> &gt; <a href="index.source.html" class="el_package">cleancode</a> &gt; <span class="el_source">Customer.java</span></div><h1>Customer.java</h1><pre class="source lang-java linenums">package cleancode;
+
+import java.util.ArrayList;
+import java.util.List;
+import utils.StringUtils;
+
+/**
+ * Represents a customer in the system.
+ */
+public class Customer {
+    private String name;
+    private List&lt;Order&gt; orders;
+
+    /**
+     * Creates a new Customer.
+     *
+     * @param name The name of the customer.
+     */
+<span class="fc" id="L19">    public Customer(String name) {</span>
+<span class="fc" id="L20">        this.orders = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">        setName(name);</span>
+<span class="fc" id="L22">    }</span>
+
+    public String getName() {
+<span class="fc" id="L25">        return name;</span>
+    }
+
+    /**
+     * Sets the customer's name.
+     *
+     * @param name The new name.
+     * @throws IllegalArgumentException if the name is null or empty.
+     */
+    public void setName(String name) {
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (StringUtils.isNullOrEmpty(name)) {</span>
+<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;Customer name cannot be empty.&quot;);</span>
+        }
+<span class="fc" id="L38">        this.name = name;</span>
+<span class="fc" id="L39">    }</span>
+
+    /**
+     * Adds an order to this customer.
+     *
+     * @param order The order to add.
+     */
+    public void addOrder(Order order) {
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">        if (order == null) {</span>
+<span class="nc" id="L48">            throw new IllegalArgumentException(&quot;Order cannot be null.&quot;);</span>
+        }
+<span class="fc" id="L50">        this.orders.add(order);</span>
+<span class="fc" id="L51">    }</span>
+
+    public List&lt;Order&gt; getOrders() {
+<span class="fc" id="L54">        return new ArrayList&lt;&gt;(orders);</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L59">        return name;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

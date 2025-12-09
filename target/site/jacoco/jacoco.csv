@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+cleancode,utils,StringUtils,0,9,0,4,0,1,0,3,0,1
+cleancode,cleancode,CustomerManager,24,126,5,15,10,33,5,11,0,6
+cleancode,cleancode,Application,3,40,0,0,1,10,1,1,1,1
+cleancode,cleancode,Order,0,24,0,2,0,9,0,5,0,4
+cleancode,cleancode,Customer,5,43,1,3,1,14,1,7,0,6

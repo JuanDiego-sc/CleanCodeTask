@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AgentMigrationStateService">
+    <option name="pendingSessionIds">
+      <option value="3ff444d6-d1fc-4083-aade-e8559949a398" />
+    </option>
+    <option name="pendingTurns">
+      <map>
+        <entry key="3ff444d6-d1fc-4083-aade-e8559949a398">
+          <value>
+            <set>
+              <option value="a4842a78-548e-41d9-a5ba-2bcfef6fd174" />
+              <option value="43e8036f-cfb7-48bf-87f1-125e25ff71b1" />
+              <option value="10c35be6-8bd0-4d2e-ae06-2c930bcae949" />
+              <option value="d37f73b7-37f4-4599-80a3-7f03a6753b9f" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <pendingWorkingSetItems>
+      <entry key="3ff444d6-d1fc-4083-aade-e8559949a398">
+        <set>
+          <option value="file://$PROJECT_DIR$/config/pmd/ruleset.xml" />
+          <option value="file://$PROJECT_DIR$/sonar-project.properties" />
+          <option value="file://$PROJECT_DIR$/INFORME_ANALISIS_CLEANCODE.md" />
+          <option value="file://$PROJECT_DIR$/src/main/java/cleancode/CustomerManagerRefactored.java" />
+          <option value="file://$PROJECT_DIR$/DOCUMENTO_REFACTORIZACION.md" />
+          <option value="file://$PROJECT_DIR$/RESUMEN_EJECUTIVO.md" />
+          <option value="file://$PROJECT_DIR$/COMMIT_MESSAGE.txt" />
+          <option value="file://$PROJECT_DIR$/GUIA_PASO_A_PASO.md" />
+          <option value="file://$PROJECT_DIR$/EVIDENCIA_Y_CHECKLIST.md" />
+          <option value="file://$PROJECT_DIR$/INDEX.md" />
+          <option value="file://$PROJECT_DIR$/README.md" />
+        </set>
+      </entry>
+    </pendingWorkingSetItems>
+  </component>
+</project>

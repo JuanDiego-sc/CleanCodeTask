@@ -1,6 +1,6 @@
-#Mon Dec 08 21:05:50 ECT 2025
-configuration*?=1E0C191CA7B4828F47A81EB85C3A78C2AF09E153
-C\:\\Users\\pelug\\OneDrive\\Escritorio\\calidad\\CleanCodeTask\\src\\main\\java\\cleancode\\Order.java=1765241029359
-module-resource*?\:checkstyle-xpath-suppressions.xml=8F4DCE1D41F47A54B69A574DAF7F9B9E3EEF96BF
-module-resource*?\:checkstyle-suppressions.xml=2C18877FBCE634EDFFBCE494367BC07C2068AA02
-C\:\\Users\\pelug\\OneDrive\\Escritorio\\calidad\\CleanCodeTask\\src\\main\\java\\cleancode\\CustomerManager.java=1765245266444
+#Mon Dec 08 21:59:41 GMT-05:00 2025
+C\:\\Users\\sebas\\IdeaProjects\\CleanCodeTask\\src\\main\\java\\cleancode\\CustomerManager.java=1765246689455
+C\:\\Users\\sebas\\IdeaProjects\\CleanCodeTask\\src\\main\\java\\cleancode\\Order.java=1765246689457
+configuration*?=58ED7C7E7AC9DCC09BB7087CD53189654AE2BF15
+module-resource*?\:checkstyle-suppressions.xml=53D28840BB0B9EE5FF23599C8B2FF147A9BCB081
+module-resource*?\:checkstyle-xpath-suppressions.xml=CC49CFA40AA583C7273FA55241258C627C9EDAD6

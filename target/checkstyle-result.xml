@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="C:\Users\pelug\OneDrive\Escritorio\calidad\CleanCodeTask\src\main\java\cleancode\Application.java">
+<file name="C:\Users\sebas\IdeaProjects\CleanCodeTask\src\main\java\cleancode\Application.java">
 <error line="13" column="5" severity="warning" message="&apos;method def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="14" column="9" severity="warning" message="El hijo de &apos;method def&apos; estás en el nivel de sangrado 8, pero esto no es el nivel correcto. Se esperaba el nivel 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="16" column="9" severity="warning" message="El hijo de &apos;method def&apos; estás en el nivel de sangrado 8, pero esto no es el nivel correcto. Se esperaba el nivel 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -13,7 +13,7 @@
 <error line="27" column="9" severity="warning" message="El hijo de &apos;method def&apos; estás en el nivel de sangrado 8, pero esto no es el nivel correcto. Se esperaba el nivel 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="28" column="5" severity="warning" message="&apos;method def rcurly&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\pelug\OneDrive\Escritorio\calidad\CleanCodeTask\src\main\java\cleancode\Customer.java">
+<file name="C:\Users\sebas\IdeaProjects\CleanCodeTask\src\main\java\cleancode\Customer.java">
 <error line="11" column="5" severity="warning" message="&apos;member def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="12" column="5" severity="warning" message="&apos;member def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="19" column="5" severity="warning" message="&apos;ctor def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
@@ -42,11 +42,11 @@
 <error line="59" column="9" severity="warning" message="El hijo de &apos;method def&apos; estás en el nivel de sangrado 8, pero esto no es el nivel correcto. Se esperaba el nivel 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="60" column="5" severity="warning" message="&apos;method def rcurly&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 </file>
-<file name="C:\Users\pelug\OneDrive\Escritorio\calidad\CleanCodeTask\src\main\java\cleancode\CustomerManager.java">
+<file name="C:\Users\sebas\IdeaProjects\CleanCodeTask\src\main\java\cleancode\CustomerManager.java">
 </file>
-<file name="C:\Users\pelug\OneDrive\Escritorio\calidad\CleanCodeTask\src\main\java\cleancode\Order.java">
+<file name="C:\Users\sebas\IdeaProjects\CleanCodeTask\src\main\java\cleancode\Order.java">
 </file>
-<file name="C:\Users\pelug\OneDrive\Escritorio\calidad\CleanCodeTask\src\main\java\utils\StringUtils.java">
+<file name="C:\Users\sebas\IdeaProjects\CleanCodeTask\src\main\java\utils\StringUtils.java">
 <error line="8" column="5" severity="warning" message="&apos;ctor def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="10" column="5" severity="warning" message="&apos;ctor def rcurly&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
 <error line="18" column="5" severity="warning" message="&apos;method def modifier&apos; estás en el nivel de sangrado 4, pero esto no es el nivel correcto. Se esperaba el nivel 2." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
