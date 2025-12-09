@@ -1,7 +1,15 @@
 package cleancode;
 
+/**
+ * Main application entry point.
+ */
 public class Application {
 
+    /**
+     * Main method.
+     *
+     * @param args Command line arguments.
+     */
     public static void main(String[] args) {
         CustomerManager manager = new CustomerManager();
 
@@ -11,8 +19,9 @@ public class Application {
         manager.addCustomer(john);
         manager.addCustomer(jane);
 
-        manager.addOrder(new Order("Order1"));
-        manager.addOrder(new Order("Order2"));
+        // Orders now belong to customers
+        manager.addOrder(john, new Order("Order1"));
+        manager.addOrder(jane, new Order("Order2"));
 
         manager.processOrders(john);
         manager.generateReport();

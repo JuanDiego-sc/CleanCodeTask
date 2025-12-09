@@ -2,68 +2,86 @@ package cleancode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
+/**
+ * Manages customers and their orders.
+ */
 public class CustomerManager {
+  private static final Logger LOGGER = Logger.getLogger(CustomerManager.class.getName());
   private List<Customer> customers = new ArrayList<>();
-  private List<Order> orders = new ArrayList<>();
 
+  /**
+   * Adds a customer to the manager.
+   *
+   * @param customer The customer to add.
+   */
   public void addCustomer(Customer customer) {
     if (customer == null) {
-      System.out.println("Customer cannot be null.");
+      LOGGER.warning("Customer cannot be null.");
       return;
     }
     customers.add(customer);
-    System.out.println("Added customer: " + customer);
+    LOGGER.info("Added customer: " + customer);
   }
 
-  public void addOrder(Order order) {
-    if (order == null) {
-      System.out.println("Order cannot be null.");
+  /**
+   * Adds an order to a specific customer.
+   *
+   * @param customer The customer to add the order to.
+   * @param order    The order to add.
+   */
+  public void addOrder(Customer customer, Order order) {
+    if (customer == null) {
+      LOGGER.warning("Customer cannot be null.");
       return;
     }
-    orders.add(order);
-    System.out.println("Order added: " + order);
-  }
-
-  public void processOrders(Customer customer) {
-    if (customer == null) {
-      System.out.println("Customer cannot be null.");
+    if (order == null) {
+      LOGGER.warning("Order cannot be null.");
       return;
     }
     if (!customers.contains(customer)) {
-      System.out.println("Customer not found: " + customer);
+      LOGGER.warning("Customer not found: " + customer);
       return;
     }
-    System.out.println("Processing orders for customer: " + customer);
-    for (Order order : orders) {
-      System.out.println("Processing order: " + order);
+    customer.addOrder(order);
+    LOGGER.info("Order added to customer " + customer + ": " + order);
+  }
+
+  /**
+   * Processes orders for a customer.
+   *
+   * @param customer The customer.
+   */
+  public void processOrders(Customer customer) {
+    if (customer == null) {
+      LOGGER.warning("Customer cannot be null.");
+      return;
+    }
+    if (!customers.contains(customer)) {
+      LOGGER.warning("Customer not found: " + customer);
+      return;
+    }
+    LOGGER.info("Processing orders for customer: " + customer);
+    for (Order order : customer.getOrders()) {
+      LOGGER.info("Processing order: " + order);
     }
   }
 
+  /**
+   * Generates a simple report of customers and their orders.
+   */
   public void generateReport() {
-    printCustomerReport();
-    printOrderReport();
-  }
-
-  private void printCustomerReport() {
-    System.out.println("Customer Report");
+    LOGGER.info("Generating Customer Report");
     if (customers.isEmpty()) {
-      System.out.println("No customers available.");
+      LOGGER.info("No customers available.");
       return;
     }
     for (Customer customer : customers) {
-      System.out.println("Customer: " + customer);
-    }
-  }
-
-  private void printOrderReport() {
-    System.out.println("Order Report");
-    if (orders.isEmpty()) {
-      System.out.println("No orders available.");
-      return;
-    }
-    for (Order order : orders) {
-      System.out.println("Order: " + order);
+      LOGGER.info("Customer: " + customer);
+      for (Order order : customer.getOrders()) {
+        LOGGER.info("  Order: " + order);
+      }
     }
   }
 }
